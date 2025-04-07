@@ -5,69 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Web Page</title>
     <style>
-      
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 20px;
-            background-color:aqua;
-            /* background-image: url(KBM.jpg); */
-            
+            background-color: aqua;
         }
-        
+
         h1 {
             color: blue;
         }
- 
-        .content {
+
+        .content, .form-container {
             background-color: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
-        
+
         .highlight {
             color: red;
             font-weight: bold;
         }
-        
-  
+
         #footer {
             text-align: center;
             margin-top: 20px;
             font-size: 14px;
             color: gray;
         }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input, select {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #id01{
+            color: rgb(48, 102, 102);
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #id01:hover{
+            color: brown;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
+        <h1>This is the page</h1>
         <h1>Welcome to My Web Page</h1>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#id01">Contact</a></li>
+            <li><a href="#student-form">Forms</a></li>
         </ul>
     </nav>
-    
+
     <section class="content">
         <h2>About Us</h2>
         <p>This is a simple web page demonstrating the use of CSS selectors.</p>
         <p class="highlight">This text is highlighted using a class selector.</p>
     </section>
-    
-    <aside>
-        <h3>Sidebar</h3>
-        <p>Additional information or links can be placed here.</p>
-    </aside>
+
+    <section id="student-form" class="form-container">
+        <h2>Student Details Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="">Select Course</option>
+                <option value="math">CSE</option>
+                <option value="science">Mech</option>
+                <option value="history">Civil</option>
+            </select>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Mathematics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Science</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>History</td>
+                <td>88</td>
+            </tr>
+        </table>
+        
+    </section>
+   
+    <div id="id01">contact:987473900</div>
     
     <footer id="footer">
         <p>&copy; 2025 My Web Page. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
