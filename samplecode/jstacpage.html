@@ -1,46 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS page</title>
+    <title>Position</title>
     <style>
-        h1{
-            color: brown;
-            background: red;
-        /* text-decoration:underline; */
+        body {
+            margin:0px;
+            background-color: blanchedalmond;
         }
-       .home
+        *
         {
-            color:red;
-            background: green;
+            margin: 0;
         }
-        #hi01
-        {
-            color: aqua;
-            text-decoration: underline;
+        
+        .imgrelative {
+            position: relative;
+            margin-left: 125px;
+            
         }
-        #hi03
-        {
-            color: cadetblue;
-            background:wheat;
+        a{
+            text-decoration: none;
+            color: wheat;
         }
-        #hi02
-        {
-            background-color: blue;
+
+        .imgrelative img {
+            width: 1000px;
+            height: 1000px;
         }
-        bod
+
+        .virat {
+            position: absolute;
+            top: 220px;
+            left: 30px;
+            color: white;
+        }
+
+        .rajath {
+            position: absolute;
+            top: 220px;
+            left: 180px;
+            color: white;
+        }
+
+        .leam {
+            position: absolute;
+            top: 220px;
+            left: 330px;
+            color: white;
+        }
+
+        .phil {
+            position: absolute;
+            top: 220px;
+            left: 480px;
+            color: white;
+        }
+
+        .josh {
+            position: absolute;
+            top: 220px;
+            left: 630px;
+            color: white;
+        }
+
+        .bhuvi {
+            position: absolute;
+            top: 220px;
+            left: 780px;
+            color: white;
+        }
+
+        .yash {
+            position: absolute;
+            top: 180px;
+            left: 100px;
+            color: white;
+        }
+
+        .devdutt {
+            position: absolute;
+            top: 180px;
+            left: 250px;
+            color: white;
+        }
+
+        .tim {
+            position: absolute;
+            top: 180px;
+            left: 400px;
+            color: white;
+        }
+
+        .krunal {
+            position: absolute;
+            top: 180px;
+            left: 550px;
+            color: white;
+        }
+
+        .suyash {
+            position: absolute;
+            top: 180px;
+            left: 700px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            background-color: black;
+            
+
+        }
+        ul li{
+            padding: 10px;
+            color: white;
+            display:list-item;
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color:rgb(10,10,26);
+        }
+        li:hover{
+        background-color: green;
+        cursor: pointer;
+        color: blue;
+        }
+        .java{
+            position: relative;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            background-color: rgb(64, 155, 45);
+            padding: 10px 20px;
+            color: black;
+        }
+        .java:hover  .dropdown-content{
+            display: block;
+        }
+        .heightandwidth{
+            height: 10px;
+            width: 5px;
+          
+
+        }
+        .img1{
+            opacity: 10%;
+            height: 200px;
+            width: 200px;
+            border-radius: 1222px;
+
+        }
+        .img2
         {
-            background: #000;
+            opacity: 35%;
+        }
+        .img3{
+            opacity: 75%;
+        }
+        .img4
+        {
+            opacity: 89%;
+        }
+        table{
+            border-collapse:col ;
         }
     </style>
 </head>
 <body>
-    <div>
-    <h1 class="home" id="hi01">Hello brother hegidira</h1>
-    <h5 id="hi02">heading 5</h5>
-    <h6 id="hi03">heading 6</h6>
-    
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">Home</a></li>
+                <li ><a href="https://www.facebook.com/login/" target="_blank">About</a></li>
+                <li><a href="https://www.google.com/search?client=firefox-b-d&q=video+urls+git" target="_blank">Contact</a></li>
+                <li class="java" > <a href="#">Java</a>
+                <div>
+                 <div class="dropdown-content">
+                    <div>inheritance</div>
+                    <div>abstarction</div>
+                 </div>
+
+                </div></li>
+
+            </ul>
+        </nav>
+    </header>
+   <br>
+    <div class="imgrelative">
+        <img src="kbm2.jpg" alt="RCB Team">
+
+        <span class="virat">Virat Kohli</span>
+        <span class="rajath">Rajath</span>
+        <span class="leam">Leam Livingstone</span>
+        <span class="phil">Phil Salt</span>
+        <span class="josh">Josh Hazlewood</span>
+        <span class="bhuvi">Bhuvneshwar Kumar</span>
+        <span class="yash">Yash Dayal</span>
+        <span class="devdutt">Devdutt Padikkal</span>
+        <span class="tim">Tim David</span>
+        <span class="krunal">Krunal Pandya</span>
+        <span class="suyash">Suyash Sharma</span>
+        
+
+          
+    </div>
+    <table border="9px">
+        <tr>
+            <th class="heightandwidth" ><img src="kbm2.jpg" alt="" ></th>
+            <th class="img2  heightandwidth"><img src="KBM.jpg" alt=""></th>
+            <th class="img3  heightandwidth"><img src="Me.jpg"  alt=""></th>
+            <th class="img4  heightandwidth"><img src="Pizza.png" alt="" ></th>
+        </tr>
+    </table>
 </body>
 </html>
