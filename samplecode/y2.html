@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Simple Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+       
+        body {
+            margin: 0;
+          
+            font-family: Arial, sans-serif;
+            
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           
+            padding: 10px 20px;
+           
+        }
+
+        .header .left,
+        .header .center,
+        .header .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .left i,
+        .header .right i {
+            font-size: 20px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .center input {
+            padding: 8px 12px;
+            font-size: 16px;
+            width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
+
+        .center .search-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #f1f1f1;
+        }
+
+        .center .search-icon {
+            background: #f8f8f8;
+            padding: 8px 16px;
+            cursor: pointer;
+            border-left: 1px solid #ccc;
+        }
+
+        .center img {
+            margin-left: 20px;
+            height: 27px;
+            width: 47px;
+        }
+
+        .video-section {
+            display: flex;
+            padding: 20px;
+        }
+
+        .video-left {
+            flex: 3;
+        }
+
+        .video-left img {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .video-right {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .video-right h4 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .video-right img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            margin-left: 120px;
+        }
+
+        .video-title {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .video-info {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .actions i {
+            font-size: 20px;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background: #f9f9f9;
+    }
+
+    .channel-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     
+      padding: 15px 20px;
+      border-radius: 10px;
+     
+    }
+
+    .channel-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .channel-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 15px;
+    }
+
+    .channel-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .channel-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .channel-name {
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .channel-name i {
+      font-size: 14px;
+      color: #606060;
+      margin-left: 5px;
+    }
+
+    .channel-subs {
+      font-size: 14px;
+      color: #606060;
+    }
+
+    .subscribe-btn {
+      background-color: black;
+      color: white;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    .channel-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .action-btn {
+      background-color: #f2f2f2;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 15px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .action-btn i {
+      font-size: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <i class="fas fa-bars"></i>
+            <div class="logo">
+                <svg viewBox="0 0 90 20" width="90" height="20" style="margin-right: 8px;">
+                    <g>
+                        <path fill="#FF0000"
+                            d="M19.8,3.2c-0.2-1.2-1.2-2.1-2.4-2.3C15.2,0.5,11.2,0.5,11.2,0.5h0c0,0-4,0-6.2,0.4C3.9,1.1,2.9,2,2.8,3.2C2.4,5.4,2,8.1,2,10s0.4,4.6,0.8,6.8c0.2,1.2,1.2,2.1,2.4,2.3C7.2,19.5,11.2,19.5,11.2,19.5s4,0,6.2-0.4c1.2-0.2,2.2-1.1,2.4-2.3c0.4-2.2,0.8-4.9,0.8-6.8S20.2,5.4,19.8,3.2z">
+                        </path>
+                        <polygon fill="#fff" points="8,14.5 14.5,10 8,5.5"></polygon>
+                    </g>
+                </svg>
+                <span style="font-size: 22px; font-weight: bold; color: black; margin-left: -67px;">YouTube</span>
+            </div>
+        </div>
+        <div class="center">
+            <div class="search-container">
+                <input type="text" placeholder="Search" />
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <img src="mic.jpg" alt="">
+        </div>
+        <div class="right">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="video-left">
+            <iframe width="760" height="450" src="https://www.youtube.com/embed/LtU1Q5cyoAU?si=O0LNzkAKCjXEOR51"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-title">FULL MATCH: Portugal v Spain | 2018 FIFA World Cup</div>
+            <div class="video-info">FIFA • 15M views • Streamed 2 years ago</div> <br>
+        </div>
+        <div class="video-right" style="margin-right: 35px;">
+            <div style="display: flex; gap: 10px; margin: 20px; flex-wrap: wrap;">
+                <button class="action-btn"><i class="fas fa-globe"></i> All</button>
+                <button class="action-btn"><i class="fas fa-compass"></i> Explore</button>
+                <button class="action-btn"><i class="fas fa-ellipsis-h"></i> More</button>
+              </div>
+              <div style="margin: 20px;">
+                <h3 style="margin-bottom: 10px;">Reels</h3>
+                <div style="display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">
+                  <div style="min-width: 140px; height: 250px; background-color: #ddd; border-radius: 10px; overflow: hidden;">
+                    <img src="https://img.youtube.com/vi/LtU1Q5cyoAU/mqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Reel Thumbnail">
+                  </div>
+                  <div style="min-width: 140px; height: 250px; background-color: #ddd; border-radius: 10px; overflow: hidden;">
+                    <img src="https://img.youtube.com/vi/0BjlBnfHcHM/mqdefault.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Reel Thumbnail">
+                  </div>
+                </div>
+              </div>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/0BjlBnfHcHM?si=h3oZ23I2t_6FEd0o"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin-right: 20px;"> </iframe>
+                <h4>Argentina vs France - World Cup Final 2022 <img src="dots.png" height="15px" width="3px" alt="">
+                    <div class="video-info">Streamed 2 years ago</div>
+                </h4>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/0BjlBnfHcHM?si=h3oZ23I2t_6FEd0o"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    style="margin-right: 20px;"></iframe>
+                <h4>Portugal vs Spain - World Cup 2018 <img src="dots.png" height="15px" width="3px" alt="">
+                    <div class="video-info">Streamed 1 year ago</div>
+                </h4>
+            </div>
+
+            <div style="display: flex; align-items: flex-start;">
+                <iframe width="250" height="150" src="https://www.youtube.com/embed/0BjlBnfHcHM?si=h3oZ23I2t_6FEd0o"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                    style="margin-right: 20px;"></iframe>
+                <h4>France vs India - Friendly Match <img src="dots.png" height="15px" width="3px" alt="">
+                    <div class="video-info">Streamed 3 years ago</div>
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div class="channel-info" style="width:800px; margin-top:-349px;">
+        <div class="channel-left">
+          <div class="channel-logo">
+            <img src="https://yt3.ggpht.com/ytc/AL5GRJUpwUvVRSGmbE_MA40au_pRDXdYkwAAJGlG4sFiyg=s88-c-k-c0x00ffffff-no-rj" alt="Channel Logo" />
+          </div>
+          <div class="channel-details">
+            <div class="channel-name">LALIGA <i class="fas fa-check-circle"></i></div>
+            <div class="channel-subs">12.7M subscribers</div>
+          </div>
+          <button class="subscribe-btn">Subscribe</button>
+        </div>
+    
+        <div class="channel-right" style="margin-left: 30px;">
+          <button class="action-btn">
+            <i class="fas fa-thumbs-up"></i> 74K
+          </button>
+          <button class="action-btn">
+            <i class="fas fa-share"></i> Share
+          </button>
+          <button class="action-btn">
+            <i class="fas fa-download"></i> Download
+          </button>
+          <button class="action-btn">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+        </div>
+      </div>
+     
+
+
+  
+  
+</body>
+
+</html>

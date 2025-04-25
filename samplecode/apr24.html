@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+
+<body>
+
+    <form name="formName" onsubmit="return submitform()">
+        <div>
+            <label for="nameId"> Name </label>
+            <span style="color: red;">*</span>
+            <span>:</span>
+            <input type="text" id="nameId" name="nameName" required>
+        </div>
+        <div>
+            <label for="numberId"> Phone Number </label>
+            <span>:</span>
+            <input type="number" id="numberId" name="numberName">
+        </div>
+        <div>
+            <label for="ageId"> Age </label>
+            <span>:</span>
+            <input type="number" id="ageId" name="ageName">
+        </div>
+        <div>
+            <label for="mailId"> Gmail </label>
+            <span>:</span>
+            <input type="email" id="mailId" name="mailName">
+        </div>
+        <div>
+            <label>Gender </label>
+            <span>:</span>
+            <input type="radio" name="Gender" id="genderMale" value="Male"> Male
+            <input type="radio" name="Gender" id="genderFemale" value="Female"> Female
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+
+</html>

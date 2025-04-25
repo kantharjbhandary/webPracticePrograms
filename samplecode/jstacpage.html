@@ -2,21 +2,21 @@
 <html>
 <head>
     <title>Position</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+       
+
         body {
             margin:0px;
             background-color: blanchedalmond;
         }
-        *
-        {
-            margin: 0;
-        }
-        
+       
+/*         
         .imgrelative {
             position: relative;
             margin-left: 125px;
             
-        }
+        } */
         a{
             text-decoration: none;
             color: wheat;
@@ -112,7 +112,7 @@
         ul li{
             padding: 10px;
             color: white;
-            display:list-item;
+            display:inline;
             text-decoration: none;
             
         }
@@ -124,7 +124,7 @@
         cursor: pointer;
         color: blue;
         }
-        .java{
+        /* .java{
             position: relative;
         }
         .dropdown-content{
@@ -133,7 +133,7 @@
             background-color: rgb(64, 155, 45);
             padding: 10px 20px;
             color: black;
-        }
+        } */
         .java:hover  .dropdown-content{
             display: block;
         }
@@ -164,29 +164,49 @@
         table{
             border-collapse:col ;
         }
+       
+        .searchId{
+            margin-left: 750px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .navBarId{
+            height: 15vh;
+            background-color: black;
+            align-content: center;
+            position: relative;
+        }
+        .navBarId i{
+            position: absolute;
+            margin-left:10px;
+            margin-top: 3.5px;
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navBarId">
             <ul>
+                 
                 <li><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">Home</a></li>
                 <li ><a href="https://www.facebook.com/login/" target="_blank">About</a></li>
                 <li><a href="https://www.google.com/search?client=firefox-b-d&q=video+urls+git" target="_blank">Contact</a></li>
-                <li class="java" > <a href="#">Java</a>
-                <div>
+               
+                <!-- <div>
                  <div class="dropdown-content">
                     <div>inheritance</div>
                     <div>abstarction</div>
-                 </div>
+                 </div> -->
 
-                </div></li>
+                <!-- </div></li> -->
+                <li class = "searchId">  <i class="fas fa-search" style="color: black;"></i> <input type="text" placeholder="       search here"> </li>
 
             </ul>
         </nav>
     </header>
    <br>
-    <div class="imgrelative">
+    <!-- <div class="imgrelative">
         <img src="kbm2.jpg" alt="RCB Team">
 
         <span class="virat">Virat Kohli</span>
@@ -211,6 +231,6 @@
             <th class="img3  heightandwidth"><img src="Me.jpg"  alt=""></th>
             <th class="img4  heightandwidth"><img src="Pizza.png" alt="" ></th>
         </tr>
-    </table>
+    </table> -->
 </body>
 </html>
